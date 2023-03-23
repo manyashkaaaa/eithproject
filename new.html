@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Онлайн детектор объектов</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/popup_detector.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <style>
+    body { text-align: center; }
+  </style>
+
+  <body>
+
+    <ul class="breadcrumb">Проект Шевелиной Марии "Реализация веб-демо с моделью детектирования"
+    </ul>
+
+    <h1> Детектор объектов </h1>
+
+    <div class="section_content" style="font-size: 1em; padding: 0;">
+      <p>
+      </p>
+      <p
+      </p>
+      <p 
+      </p>
+      <p 
+      </p>
+
+      <hr style="margin: 1em;">
+
+      <!-- buttons -->
+      <div style="margin: 1em;">
+        <!-- input file -->
+        <div id="examples_text" class="examples_text">
+          Try examples:
+          a <li id="example_dog" class="example">dog</li>,
+          a <li id="example_street" class="example">street</li>,
+          a <li id="example_wedding" class="example">wedding</li>,
+          and <li id="example_ngc1499" class="example">NGC1499</li>
+          <br> or
+        </div>
+        <label id="upload" for="file-input" class="btn upload" style="margin-top: 1em;"> Загрузите свое изображение </label>
+        <input id="file-input" type="file" accept="image/*">
+        <!-- detect -->
+        <button id="detect" class="btn detect hide"> Detect </button>
+        <!-- reload -->
+        <button id="reload" class="btn reload hide" onclick="reload()"> Reset ↻ </button>
+      </div>
+    </div>
+
+    <!-- image box -->
+    <div class="preview"> </div>
+
+    <footer class="version">
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+    <script src="js/upload_handler.js"></script>
+    <script src="js/status_checker.js"></script>
+  </body>
+</html>
